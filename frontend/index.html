@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MERN Blog Frontend</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <!-- Nice UI while React loads -->
+    <div class="loading-wrapper" id="loader-screen">
+      <div class="title">MERN Blog</div>
+      <div class="subtitle">Loading your awesome blog…</div>
+      <div class="loader"></div>
+    </div>
+
+    <!-- React App Root -->
+    <div id="root" style="display: none"></div>
+
+    <script type="module">
+      // Hide loader once React mounts
+      const rootObserver = new MutationObserver(() => {
+        document.getElementById("loader-screen").style.display = "none";
+        document.getElementById("root").style.display = "block";
+        rootObserver.disconnect();
+      });
+
+      rootObserver.observe(document.getElementById("root"), {
+        childList: true,
+      });
+    </script>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

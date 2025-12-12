@@ -1,0 +1,72 @@
+/* Home Page Container */
+.home-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Title */
+.home-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* Search Form */
+.search-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+/* Search Input */
+.search-input {
+  padding: 12px 15px;
+  width: 60%;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #6a5acd;
+  box-shadow: 0px 0px 6px rgba(106, 90, 205, 0.3);
+}
+
+/* Search Button */
+.search-btn {
+  padding: 12px 20px;
+  background: #6a5acd;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.search-btn:hover {
+  background: #5848c2;
+}
+
+/* Posts Grid */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 20px;
+  padding-top: 20px;
+}
+
+/* No Posts Text */
+.no-posts {
+  text-align: center;
+  font-size: 18px;
+  padding: 40px 0;
+  color: #666;
+}

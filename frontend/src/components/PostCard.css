@@ -1,0 +1,44 @@
+.post-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.post-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+}
+
+.post-body {
+  margin: 12px 0;
+  color: #666;
+}
+
+.post-date {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  padding: 10px 15px;
+  border: none;
+  background: #6a5acd;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.read-more:hover {
+  background: #5848c2;
+}
